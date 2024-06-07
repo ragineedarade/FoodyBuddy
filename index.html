@@ -1,0 +1,484 @@
+<!-- nav bar 27 -->
+<!-- slider 149 -->
+<!-- toster message 227 -->
+<!-- popular drinks 250 -->
+<!--  explore more 336 -->
+<!-- tradition food  305-->
+<!-- question in mind 373 -->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="index.css">
+    <style>
+    
+    </style>
+  </head>
+  <body>
+    <!-- nav bar start from hear -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">FoodyBuddy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+               
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+               
+            </li>
+ 
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search"  action="https://www.google.com/search" method="GET">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#SignUpModal">SignUp</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+   <br>
+    
+
+<!--  login Modal -->
+<div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="LoginModalLabel">login </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+ 
+      </div>
+    </div>
+  </div>
+</div>
+ 
+
+<!--  sign up Modal -->
+<div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="SignUpModalLabel">create account</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"> Confirm Password</label>
+            <input type="password" class="form-control" id="cexampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!--  slide is start from hear -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="im/S1.avif"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Misal Pav</h5>
+            <p>This is most eating dish in maharstra everyone like to eat </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="im/S2.webp "
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Tradition dish of india</h5>
+            <!-- <p>Some representative placeholder content for the second slide.</p> -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="im/S3.webp"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Junka Bhakar</h5>
+            <p>This is a most popular and tradition dish of marastra.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+        <!--  this is s toster message -->
+   <div class="tost">
+    <button type="button" class="btn btn-secondary" id="liveToastBtn">Click Hear for Trending Recipie</button>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="  " class="rounded me-2" alt="...">
+          <strong class="me-auto">Today trending Food</strong>
+          <small>11 mins ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Hello, world!   lets Make a Aalu paratha.
+          <br>
+          <a href="cart.html" class="btn btn-secondary">Read Recipe</a>
+            <a href="cart.html" class="btn btn-secondary">Watch videos</a>
+        </div>
+      </div>
+    </div>
+   </div>
+     
+<!--  drino card will start from mhear -->
+<h1> Most popular Drink You Shoud Try </h1>
+
+    <div class="row row-cols-1 row-cols-md-3 g-6">
+      <div class="cool">
+        <div class="card">
+          <img src="im/DRINK1.webp " class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title"> Kokum Sharbat</h4>
+          
+            <p class="card-text"> Description: Kokum Sharbat is a refreshing drink made from kokum fruit, popular in Maharashtra and known for its cooling properties.</p>
+            <a href="https://en.wikipedia.org/wiki/Garcinia_indica
+            " class="btn btn-secondary">Read Recipe</a>
+            <a href="https://youtu.be/x_Jr6BZRb3A?si=d-hW3pX9CFQdBgpH" class="btn btn-secondary">Watch videos</a>
+          </div>
+        </div>
+      </div>
+      <div class="cool">
+        <div class="card">
+          <img src="im/DRINK2.jpg " class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">. Aamras</h4>
+            <p class="card-text"> Description: Aamras is a sweet dish made of ripe mango pulp, typically served with puri (fried bread) during the summer season in Maharashtra and Gujarat.</p>
+            <a href="https://spoonsofflavor.com/aamras-recipe-with-mango-pulp-how-to-make-aamras/" class="btn btn-secondary">Read Recipe</a>
+            <a href="https://youtu.be/VTxLxy66o5Q?si=nzta--k96M-LZf6o" class="btn btn-secondary">Watch videos</a>
+          </div>
+        </div>
+      </div>
+      <div class="cool">
+        <div class="card">
+          <img src="im/DRINK3.jpeg " class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title"> Raita</h4>
+            <p class="card-text"> Description: Raita is a yogurt-based side dish mixed with raw or cooked vegetables or fruits, .</p>
+            <a href="https://www.indianhealthyrecipes.com/raita-recipes-biryani-pulao-kababs/" class="btn btn-secondary">Read Recipe</a>
+            <a href="https://youtu.be/oCGd0QpxrZ0?si=IBgJerz1x9UbLYSk" class="btn btn-secondary">Watch videos</a>
+          </div>
+        </div>
+      </div>
+      <div class="cool">
+        <div class="card">
+          <img src="im/DRINK4.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title"> Nimbu Pani (Lemonade)</h4>
+            <p class="card-text"> Description: Nimbu Pani is a traditional Indian lemonade made with lemon juice, water, sugar, and sometimes a pinch of salt or spices.</p>
+         
+            <a href="https://en.wikipedia.org/wiki/Lemonade" class="btn btn-secondary">Read Recipe</a>
+            <a href="https://youtu.be/4jUvcGdqy6A?si=0yc5hrLC0k0QHozz" class="btn btn-secondary">Watch videos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1> Traditional food you shoud Try out</h1>
+    <!-- this is foood contant -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="im/1.avif"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">South Indian Thali</h5>
+            <p class="card-text">
+              Description: A South Indian Thali is a traditional platter consisting of a variety of dishes, including rice, dal, sambar, rasam, vegetables, and desserts, served on a banana leaf or a large plate.
+            </p>
+            <a href="www.wikipidia.com" class="btn btn-secondary">Read Recipe</a>
+            <a href="https://youtu.be/ENU8nBYO7ZM?si=n6oM8myJkXjUKI1k" class="btn btn-secondary">Watch videos</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="im/2.jpg "
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Gujarati Thali</h5>
+            <p class="card-text">
+              Description: A Gujarati Thali is a complete meal that includes various Gujarati dishes such as dal, kadhi, shaak (vegetables), chapati, rice, and sweets, offering a balance of sweet, spicy, and tangy flavors.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Gujarati_cuisine" class="btn btn-secondary">Read Recipe</a>
+            <a href="https://youtu.be/UfEHshVu5oQ?si=5HVRQaEj-GBBiawU" class="btn btn-secondary">Watch videos</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="im/3.jpg "
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">  Pav Bhaji</h5>
+            <p class="card-text">
+              Description: Pav Bhaji is a popular street food from Mumbai consisting of a spicy vegetable mash served with buttered pav (bread rolls). 
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Pav_bhaji" class="btn btn-secondary">Read Recipe</a>
+            <a href="https://youtu.be/sAnPUIvPc1I?si=5bWnH0kNvpoW0uT0" class="btn btn-secondary">Watch videos</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- this is explor more -->
+     <div class="more">
+      <a href="cart.html" class="btn btn-secondary">Explore More</a>
+     </div>
+    <!-- questions in a mind -->
+    <h3>Most Asked Question On Google</h3>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Most popular food of Mumbai
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> WadaPav , Pav Bhaji</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Indore ka popular nasta
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> Poha You Shoud Try
+      </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            What you Like
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> Dal Bati Dal Chawal</div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <!-- there  is a  footer  of the website -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h2>About Us</h2>
+          <p>
+            We are dedicated to providing the best service and quality products.
+            Our mission is to create value for our customers.
+          </p>
+        </div>
+        <div class="footer-section links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section social-icons">
+          <h2>Follow Us</h2>
+          <a href="ragineedarade@gmail.com"  >Email</a><br>
+          <a href="https://www.instagram.com/raginee_darade/?hl=en" > Instagram</a><br>
+          <a href="https://sites.google.com/view/ragineedarade/"  >Portfolio</a><br>
+          <a href="https://www.linkedin.com/in/raginee-darade/" >Linkedin</a>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        &copy; 2024 FoodyBuddy | Designed by Raginee Darade
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const toggleButton = document.getElementById("mode-toggle");
+        const currentMode = localStorage.getItem("theme") || "light";
+
+        document.body.classList.add(currentMode + "-mode");
+
+        toggleButton.addEventListener("click", () => {
+          if (document.body.classList.contains("light-mode")) {
+            document.body.classList.replace("light-mode", "dark-mode");
+            localStorage.setItem("theme", "dark");
+          } else {
+            document.body.classList.replace("dark-mode", "light-mode");
+            localStorage.setItem("theme", "light");
+          }
+        });
+      });
+      const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}
+    </script>
+  </body>
+</html>

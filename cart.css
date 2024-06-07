@@ -1,0 +1,123 @@
+body {
+    background-color: rgb(241, 241, 241);
+  }
+
+  .breadcrumb {
+    background-color: rgb(241, 241, 241);
+    height: 35px;
+    color: black;
+    font-size: 15px;
+    margin-top: 8px;
+  }
+  .breadcrumb a {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+  .navbar-brand {
+    font-size: 32px;
+  }
+  footer {
+    background: #6c6a6a;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 10px;
+  }
+  .footer-section {
+    flex: 1;
+    padding: 10px;
+    font-family: cursive;
+  }
+  .footer-section h2 {
+    margin-bottom: 5px;
+  }
+  .footer-section p,
+  .footer-section ul,
+  .footer-section form {
+    margin: 0;
+  }
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-section ul li {
+    margin-bottom: 5px;
+  }
+  .footer-section ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 22px;
+  }
+  .footer-section ul li a:hover {
+    color: white;
+  }
+  .footer-section .contact-form input,
+  .footer-section .contact-form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  .footer-section .contact-form button {
+    border: none;
+    border-radius: 5px;
+    background: #ff9800;
+    color: white;
+    cursor: pointer;
+  }
+  .footer-section .contact-form button:hover {
+    background: #e68900;
+  }
+  .footer-bottom {
+    text-align: center;
+    padding: 10px 20px;
+    background: #232323;
+    color: #bbb;
+  }
+  .footer-bottom a {
+    color: #ff9800;
+    text-decoration: none;
+  }
+  .footer-bottom a:hover {
+    color: #e68900;
+  }
+  .social-icons a {
+    color: #bbb;
+    margin: 0 10px;
+    font-size: 1.5rem;
+  }
+  .social-icons a:hover {
+    color: white;
+  }
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  .footer-section {
+    animation: slideIn 1s ease-in-out;
+  }
+  .breadcrumb-item a{
+    color: #040404;
+    text-decoration: none;
+  }
+  .card  {
+    margin: 20px;
+  }
+  .card img{
+    margin-top: 10px;
+    width: 95%;
+    margin-left: 10px;
+  }
+   

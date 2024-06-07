@@ -1,0 +1,166 @@
+body {
+    background-color: rgb(241, 241, 241);
+  }
+   
+
+   
+  .navbar-brand {
+    font-size: 32px;
+  }
+
+  #carouselExampleCaptions {
+    max-width: 1050px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Centers the carousel horizontally */
+    margin-bottom: 30px;
+
+    border: 2px solid black;
+  }
+
+  .nav-item {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+
+  .container {
+    text-align: center;
+    margin-top: 20%;
+  }
+.cool{
+    width: 24%;
+    margin-bottom: 30px;
+    padding: 1.5px;
+     
+    margin-left: 3px;
+}
+.cool img{
+    width: 90%;
+    margin-top: 8px;
+     align-items: center;
+     margin-left: 15px;
+     justify-content: center;
+}
+.tost{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 30px;
+   
+ }
+.d-flex button{
+margin-left: 10px;
+}
+h1{
+text-align: center;
+margin-bottom: 15px;
+margin-top: 15px;
+}
+.card-body{
+padding: 3px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 10px;
+}
+h3{
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 20px;
+}
+.more{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  
+}
+footer {
+  background: #6c6a6a;
+  color: white;
+  padding: 10px 0;
+  position: relative;
+  overflow: hidden;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 10px;
+}
+.footer-section {
+  flex: 1;
+  padding: 10px;
+  font-family:cursive;
+}
+.footer-section h2 {
+  margin-bottom: 5px;
+}
+.footer-section p,
+.footer-section ul,
+.footer-section form {
+  margin: 0;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+.footer-section ul li a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 22px;
+}
+.footer-section ul li a:hover {
+  color: white;
+}
+.footer-section .contact-form input,
+.footer-section .contact-form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.footer-section .contact-form button {
+  border: none;
+  border-radius: 5px;
+  background: #ff9800;
+  color: white;
+  cursor: pointer;
+}
+.footer-section .contact-form button:hover {
+  background: #e68900;
+}
+.footer-bottom {
+  text-align: center;
+  padding: 10px 20px;
+  background: #232323;
+  color: #bbb;
+}
+.footer-bottom a {
+  color: #ff9800;
+  text-decoration: none;
+}
+.footer-bottom a:hover {
+  color: #e68900;
+}
+.social-icons a {
+  color: #bbb;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+.social-icons a:hover {
+  color: white;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.footer-section {
+  animation: slideIn 1s ease-in-out;
+}
